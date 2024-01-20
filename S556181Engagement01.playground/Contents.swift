@@ -52,13 +52,13 @@ if let age = Int(age) {
 
 //Question 11
 private func addTwoNumbers(number1: Int, number2: Int) -> String {
-let reversedNum1 = Int(String(String(number1).reversed())) ?? 0
-    let reversedNum2 = Int(String(String(number2).reversed())) ?? 0
-    let sum = reversedNum1 + reversedNum2
-    let reversedSum = Int(String(String(sum).reversed())) ?? 0
-    return "\(reversedSum)"
+    let reversedNumber1 = Int(String(String(number1).reversed())) ?? 0
+    let reversedNumber2 = Int(String(String(number2).reversed())) ?? 0
+    let sum = reversedNumber1 + reversedNumber2
+    let reversedSumString = String(String(sum).reversed())
+    return reversedSumString
 }
 let result1 = addTwoNumbers(number1: 983, number2: 3256)
-print("Example 1: \(result1)")
+print("Example1 : \(result1)")
 let result2 = addTwoNumbers(number1: 1, number2: 9999)
-print("Example 2: \(result2)")
+print("Example2 : \(result2)")
